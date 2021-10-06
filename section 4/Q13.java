@@ -22,4 +22,5 @@ public class Q13 {
         else
             System.out.println("Prime number");
     }
+    
 }
