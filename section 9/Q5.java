@@ -13,8 +13,22 @@ public class Q5 {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the number of terms for the Series (< 20) : ");
         int n = scan.nextInt();
-        System.out.println("The Series are : 1 1");
-        fibonacci(n);
+        if(n<20){
+            System.out.println("The Series are : ");
+        
+        if(n==1){
+            System.out.println("1");
+        }
+        if(n>2)
+        {
+            System.out.println("1 ");
+            System.out.println("1 ");
+            fibonacci(n-2);
+        }
+    }else{
+        System.out.println("Please enter a number less than 20");
+        
+    }
 
 
     }
@@ -23,7 +37,7 @@ public class Q5 {
             return;
        }else
             c=a+b;
-            System.out.print(c + " ");
+            System.out.print(c + "\n");
             a=b;
             b=c;
             fibonacci(n - 1);
